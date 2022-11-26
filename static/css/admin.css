@@ -159,3 +159,7 @@ body,
     font-size: 16px;
     color: #e4e4e4;
 }
+
+.title p {
+    cursor: pointer;
+}

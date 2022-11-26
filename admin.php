@@ -21,7 +21,7 @@ include './backend/admin/admin.php';
         <div class="container">
             <div class="layui-layout layui-layout-admin">
                 <div class="layui-header fadeInDown animated border_none">
-                    <div class="title">
+                    <div class="title" id="title">
                         <p>Weeding Ress</p>
                     </div>
                     <ul class="layui-nav layui-layout-right a">

@@ -3,6 +3,7 @@ class Welcome {
         this.nameDom = $(".main_banner_title").find("span")
         this.backendDom = $(".joinBackendBtn")
         this.logoutDom = $(".logoutBtn")
+        
         this.init()
     }
     init() {
@@ -22,7 +23,7 @@ class Welcome {
             window.location.href = "/weddingDress/admin.php"
         })
         this.logoutDom.click(() => {
-            window.location.href = "/weddingDress/backend/logout.php"
+            window.location.href = "/weddingDress/backend/index/logout.php"
         })
     }
 }
