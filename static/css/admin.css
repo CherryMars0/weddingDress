@@ -1,0 +1,161 @@
+html,
+body,
+.panel {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e4e4e4 !important;
+}
+
+.panel {
+    background-color: #b2bec3;
+}
+
+.layui-header,
+.layui-footer {
+    background-color: #3A3E4A !important;
+}
+
+.border_none {
+    border: none !important;
+}
+
+.layui-btn {
+    width: 120px;
+}
+
+.layui-btn-primary button,
+.layui-btn-primary {
+    border-radius: 5px;
+    border: none !important;
+    background-color: #1abc9c;
+    opacity: 0.9;
+    color: #dfe6e9;
+    font-size: 16px;
+}
+
+.layui-btn-primary button:hover,
+.layui-btn-primary:hover {
+    opacity: 1;
+    background-color: #16a085;
+    color: white;
+}
+
+.title {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title p {
+    color: wheat;
+    font-size: 22px;
+    text-shadow: 0 0 1px #b8b8af;
+}
+
+.layui-body {
+    position: absolute;
+    top: 44px;
+    left: 200px;
+    width: calc(100% - 200px);
+    height: calc(100% - 104px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sales,
+.orders,
+.visitors {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.sales button,
+.orders button,
+.visitors button {
+    width: 180px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 100px;
+    border: 3px solid #A2A2A2 !important;
+    border-radius: 10px;
+    color: #A2A2A2;
+    font-size: 18px;
+    background-color: #E4E4E4;
+    cursor: pointer;
+}
+
+.sales-top,
+.orders-top,
+.visitors-top {
+    width: 100%;
+    height: 80px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+}
+
+.sales-top img,
+.orders-top img,
+.visitors-top img {
+    filter: grayscale(1);
+    filter: invert(1);
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.sales-bottom,
+.orders-bottom,
+.visitors-bottom {
+    padding-top: 30px;
+    width: 100%;
+    height: 90px;
+    background-color: #414755;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+
+.sales-top {
+    background-color: #FEBE20;
+}
+
+.orders-top {
+    background-color: #3A7ABA;
+}
+
+.visitors-top {
+    background-color: #2CBC61;
+}
+
+.layui-body-logo {
+    width: 80px;
+    object-fit: cover;
+}
+
+.layui-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layui-footer span {
+    font-size: 16px;
+    color: #e4e4e4;
+}

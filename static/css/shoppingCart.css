@@ -1,0 +1,153 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.shppingCart {
+    width: 1100px;
+}
+
+.title {
+    text-align: center;
+    line-height: 80px;
+    font-size: 26px;
+    color: #4e4e4e;
+    font-weight: bold;
+}
+
+.shppingCart_detail {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.shppingCart_detail_top_left {
+    width: 300px;
+    text-align: center;
+}
+
+.shppingCart_detail_top {
+    font-size: 12px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    border: 1px solid #e9e9e9;
+}
+
+.shppingCart_detail_top_right {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shppingCart_detail_shop_left img {
+    width: 55px;
+}
+
+.shppingCart_detail_shop {
+    background-color: #FFF4E8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shppingCart_detail_shop_left {
+    height: 80px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.shppingCart_detail_shop_right {
+    height: 80px;
+    width: 37%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.shppingCart_detail_total {
+    font-size: 12px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+    border: 1px solid #e9e9e9;
+}
+
+.shppingCart_detail_total_left {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shppingCart_detail_total_right {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shppingCart_detail_shop_left div span {
+    display: block;
+    width: 200px;
+}
+
+.shop_count input {
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.shop_count button {
+    width: 20px;
+    border: none;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.shppingCart_detail_shop_right {
+    font-size: 12px;
+}
+
+.shppingCart_detail_shop_right span {
+    color: red;
+}
+
+.shop_oprating p {
+    cursor: pointer;
+}
+
+.shppingCart_detail_total_right button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    transition: all ease-in-out 0.3s;
+}
+
+.shppingCart_detail_total_right button:hover {
+    color: black;
+    background-color: white;
+}
+
+.shppingCart_detail_total_left button {
+    border: none;
+    cursor: pointer;
+}

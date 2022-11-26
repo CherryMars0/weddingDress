@@ -1,0 +1,212 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.banner_logo {
+    width: 220px;
+    height: 40px;
+}
+
+.main_left {
+    width: 400px;
+    height: 100%;
+}
+
+.banner {
+    width: calc(100% - 400px);
+    height: 100%;
+    position: relative;
+}
+
+
+
+.banner_words {
+    position: absolute;
+    bottom: 120px;
+    left: 138px;
+}
+
+.banner_words p {
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    text-shadow: 0 0 1px #b8b8af;
+    font-family: 'Merienda', cursive;
+}
+
+.banner_words span {
+    color: antiquewhite;
+    font-size: 14px;
+    line-height: 30px;
+    text-shadow: 0 0 1px #b8b8af;
+    font-family: 'Merienda', cursive;
+}
+
+
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.loginTitle {
+    font-size: 32px;
+    line-height: 32px;
+    font-family: 'Merienda', cursive;
+}
+
+.loginContainer {
+    float: left;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loginContainer-bottom {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputBox {
+    border-bottom: 1px solid #4e4e4e;
+    width: 245px;
+    height: 22px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputBox p {
+    text-align: center;
+    line-height: 22px;
+    width: 20px;
+    height: 21px;
+    margin-bottom: -5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.loginContainer-bottom {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer-bottom ul {
+    width: 85px;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.loginContainer-bottom ul li {
+    height: 25px;
+    line-height: 30px;
+}
+
+.loginContainer-bottom ul li:nth-child(2) {
+    border: 1px solid black;
+}
+
+.loginContainer-bottom a {
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.loginBtn {
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all ease-in-out 0.5s;
+}
+
+.loginBtn:hover {
+    background-color: #e4e4e4;
+    color: black;
+}
+
+.loginForm input {
+    height: 20px;
+    width: 180px;
+    border-radius: 5px;
+    outline: none;
+    vertical-align: baseline;
+    border: none;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.loginForm button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.errorTab {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}
+
+#code {
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.inputCaptcha {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    cursor: default;
+}

@@ -1,0 +1,48 @@
+.shop_banner {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    display: flex;
+}
+
+.container {
+    background-image: url('../shopImg/n3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shop_banner_left,
+.shop_banner_left img {
+    width: 400px;
+    height: 500px;
+}
+
+.shop_banner img {
+    transform: scale(0.95);
+    transition: all  0.2s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shop_banner_right {
+    width: 400px;
+    height: 500px;
+}
+
+.shop_banner_right img {
+    float: left;
+    width: 200px;
+    height: 250px;
+}
+
+.shop_banner img:hover {
+    transform: scale(1);
+}
+
+.header-container-bottom ul li:nth-child(1) {
+    background-color: black;
+}
+
+.header-container-bottom ul li:nth-child(1) a {
+    color: white;
+}

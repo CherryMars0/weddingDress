@@ -1,0 +1,127 @@
+.main_banner {
+    width: 100%;
+    height: 520px;
+    position: relative;
+}
+
+.main_banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+    left: 0;
+    top: 0;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main_banner_words {
+    position: absolute;
+    top: 260px;
+    left: 150px;
+    width: 40%;
+}
+
+.main_banner_words p {
+    font-size: 32px;
+    line-height: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    color: white;
+    background: url('../shopImg/Q6_03.png') no-repeat left bottom;
+    text-shadow: 0 0 1px #b8b8af;
+    font-family: 'Merienda', cursive;
+}
+
+.main_banner_words span {
+    font-size: 15px;
+    display: block;
+    color: #c2c2c1;
+    text-shadow: 0 0 1px #b8b8af;
+    font-family: 'Merienda', cursive;
+}
+
+.shop_banner {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop_banner_top {
+    width: 1400px;
+    margin: 0 auto;
+    height: 420px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shop_banner img {
+    transition: all ease-in-out 0.2s;
+    width: 290px;
+    height: 390px;
+    transform: scale(0.98);
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px #e4e4e4;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.shop_banner img:hover {
+    transform: scale(1.00);
+}
+
+.shop_banner_Bottom {
+    margin-top: 20px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.shop_banner p {
+    line-height: 100px;
+    font-size: 26px;
+    color: #4e4e4e;
+    font-weight: bold;
+}
+
+.shop_banner_Bottom_top {
+    display: flex;
+    width: 100%;
+}
+
+.shop_banner_Bottom_top img {
+    width: 33.333%;
+    height: 700px;
+}
+
+.shop_banner_Bottom_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.shop_banner_Bottom_bottom img {
+    width: 25%;
+    height: 520px;
+}
+
+.header-container-bottom ul li:nth-child(3) {
+    background-color: black;
+}
+
+.header-container-bottom ul li:nth-child(3) a {
+    color: white;
+}
