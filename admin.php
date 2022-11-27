@@ -26,7 +26,7 @@ include './backend/admin/admin.php';
                     </div>
                     <ul class="layui-nav layui-layout-right a">
                         <li class="layui-nav-item layui-hide layui-show-md-inline-block">
-                            <p class="userName"><?= $userName ?></p>
+                            <p class="userName"><?= $admin->userName ?></p>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +42,7 @@ include './backend/admin/admin.php';
                                     <dd><a href="javascript:;" class="item">formal </a></dd>
                                 </dl>
                             </li>
-                            <li class="layui-nav-item">
+                            <li class="layui-nav-item Management">
                                 <a href="javascript:;">User Management</a>
                                 <dl class="layui-nav-child">
                                     <dd><a href="javascript:;" class="item">Seller</a></dd>
@@ -53,7 +53,7 @@ include './backend/admin/admin.php';
                             <li class="layui-nav-item">
                                 <a href="javascript:;">System</a>
                                 <dl class="layui-nav-child">
-                                    <dd><a href="javascript:;" class="item">User Informations</a></dd>
+                                    <dd><a href="/weddingDress/index.php" class="item">back Index page</a></dd>
                                     <dd><a href="javascript:;" class="item logout">Logout</a></dd>
                                 </dl>
                             </li>
@@ -102,7 +102,7 @@ include './backend/admin/admin.php';
                     </div>
                 </div>
                 <div class="layui-footer fadeInUp animated">
-                    <span class="role"><?= $Permissions ?></span>
+                    <span class="role"><?= $admin->Permissions ?></span>
                 </div>
             </div>
         </div>

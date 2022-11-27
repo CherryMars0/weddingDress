@@ -27,8 +27,9 @@ include './backend/index/Detail.php';
                 <li><a href="./BridalVeil.php">西式婚纱</a></li>
                 <li><a href="./ChidalVeil.php">中式婚纱</a></li>
                 <li><a href="./formal.php">晚礼服</a></li>
-                <li><a href="./login.php">登录</a></li>
-                <li><a href="./register.php">注册</a></li>
+                <li class="login"><a href="./login.php">登录</a></li>
+                <li class="register"><a href="./register.php">注册</a></li>
+                <li class="userCenter"><a href="./welcome.php"><?= $detail->userName ?></a></li>
             </ul>
         </div>
         <div class="main">
@@ -38,24 +39,25 @@ include './backend/index/Detail.php';
             </div>
             <div class="shop_Detail">
                 <div class="shop_pic">
-                    <img src="./static/shopImg/luomaA.png">
+                    <img src="<?= $detail->Goods[7] ?>">
+                    <div class="shop_price"><?= $detail->Goods[8] ?>$</div>
                 </div>
                 <div class="shop_info">
                     <div class="shop_desc">
-                        <p>欧式立领蓬蓬裙婚纱</p>
-                        <p>关键字: <span>蕾丝、性感、纯色</span></p>
-                        <p>面料: <span>蕾丝、雪纺</span></p>
-                        <p>风格: <span>优雅</span></p>
-                        <p>款型: <span>蓬蓬裙</span></p>
-                        <p>设计师: <span>Rose</span></p>
-                        <p>说明: <span>图片仅供参考，具体面料、花色请咨询门店</span></p>
+                        <p><?= $detail->Goods[0] ?></p>
+                        <p>关键字: <span><?= $detail->Goods[1] ?></span></p>
+                        <p>面料: <span><?= $detail->Goods[2] ?></span></p>
+                        <p>风格: <span><?= $detail->Goods[3] ?></span></p>
+                        <p>款型: <span><?= $detail->Goods[4] ?></span></p>
+                        <p>设计师: <span><?= $detail->Goods[5] ?></span></p>
+                        <p>说明: <span><?= $detail->Goods[6] ?></span></p>
                     </div>
-                    <div class="shop_count">
-                        <button>-</button>
-                        <input type="text">
-                        <button>+</button>
+                    <div class="shop_count ">
+                        <button class="subtract">-</button>
+                        <input type="text" readonly class="count">
+                        <button class="add">+</button>
                     </div>
-                    <div class="shop_submit">
+                    <div class="shop_submit ">
                         <button>加入购物车</button>
                     </div>
                 </div>
@@ -109,6 +111,8 @@ include './backend/index/Detail.php';
 </body>
 
 <script src="./static/js/axios.min.js"></script>
+<script src="./static/js/userJudge.js"></script>
 <script type="text/javascript" src="./static/js/Detail.js"></script>
+
 
 </html>

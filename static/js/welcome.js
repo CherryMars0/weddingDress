@@ -1,29 +1,41 @@
 class Welcome {
     constructor() {
         this.nameDom = $(".main_banner_title").find("span")
-        this.backendDom = $(".joinBackendBtn")
-        this.logoutDom = $(".logoutBtn")
-        
+        this.backendBtnDom = $(".joinBackendBtn")
+        this.logoutBtnDom = $(".logoutBtn")
+        this.shpooingBtnDom = $(".shppingBtn")
+        this.loginDom = $(".login")
+        this.registerDom = $(".register")
+        this.userCenterDom = $(".userCenter")
         this.init()
     }
     init() {
         this.binder()
         let role = this.nameDom[1].innerHTML.split(":")[1]
         if (role.length != 0) {
+            this.loginDom.css("display", "none")
+            this.registerDom.css("display", "none")
+            this.userCenterDom.css("display", "block")
             if (role == " Buyers") {
-                this.backendDom.css("display", "none")
+                this.backendBtnDom.css("display", "none")
             }
-        }else{
+            if (role == " Sellers" || role == " WarehouseAdministartor") {
+                this.shpooingBtnDom.css("display", "none")
+            }
+        } else {
             alert("非法登入")
             window.location.href = "/weddingDress/index.php"
         }
     }
     binder() {
-        this.backendDom.click(() => {
+        this.backendBtnDom.click(() => {
             window.location.href = "/weddingDress/admin.php"
         })
-        this.logoutDom.click(() => {
+        this.logoutBtnDom.click(() => {
             window.location.href = "/weddingDress/backend/index/logout.php"
+        })
+        this.shpooingBtnDom.click(() => {
+            window.location.href = "/weddingDress/shoppingCart.php"
         })
     }
 }

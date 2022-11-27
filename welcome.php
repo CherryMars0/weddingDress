@@ -26,9 +26,10 @@ include './backend/index/welcome.php';
                 <li><a href="./index.php">首页</a></li>
                 <li><a href="./BridalVeil.php">西式婚纱</a></li>
                 <li><a href="./ChidalVeil.php">中式婚纱</a></li>
-                <li><a href="./Hanfu.php">晚礼服</a></li>
-                <li><a href="./login.php">登录</a></li>
-                <li><a href="./register.php">注册</a></li>
+                <li><a href="./formal.php">晚礼服</a></li>
+                <li class="login"><a href="./login.php">登录</a></li>
+                <li class="register"><a href="./register.php">注册</a></li>
+                <li class="userCenter"><a href="./welcome.php"><?=$_SESSION['userName']?></a></li>
             </ul>
         </div>
 
@@ -43,6 +44,7 @@ include './backend/index/welcome.php';
                 </div>
                 <div class="btn">
                     <button class="joinBackendBtn">进入后台</button>
+                    <button class="shppingBtn">购物车</button>
                     <button class="logoutBtn">登出</button>
                 </div>
             </div>
@@ -95,6 +97,8 @@ include './backend/index/welcome.php';
 </body>
 
 <script src="./static/js/axios.min.js"></script>
+<script src="./static/js/userJudge.js"></script>
 <script type="text/javascript" src="./static/js/welcome.js"></script>
+
 
 </html>

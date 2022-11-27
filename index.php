@@ -28,8 +28,9 @@ include './backend/index/index.php';
                     <li><a href="./BridalVeil.php">西式婚纱</a></li>
                     <li><a href="./ChidalVeil.php">中式婚纱</a></li>
                     <li><a href="./formal.php">晚礼服</a></li>
-                    <li><a href="./login.php">登录</a></li>
-                    <li><a href="./register.php">注册</a></li>
+                    <li class="login"><a href="./login.php">登录</a></li>
+                    <li class="register"><a href="./register.php">注册</a></li>
+                    <li class="userCenter"><a href="./welcome.php"><?=$index->userName?></a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +45,7 @@ include './backend/index/index.php';
             </div>
             <div class="shop_banner">
                 <div class="shop_banner_left">
-                    <img src="./static/shopImg/luomaA.png">
+                    <img src="<?= $index->Goods[7] ?>">
                 </div>
                 <div class="shop_banner_right">
                     <img src="./static/shopImg/luomaB.png">
@@ -101,6 +102,7 @@ include './backend/index/index.php';
 </body>
 
 <script src="./static/js/axios.min.js"></script>
+<script src="./static/js/userJudge.js"></script>
 <script src="./static/js/slide.js"></script>
 <script type="text/javascript" src="./static/js/index.js"></script>
 

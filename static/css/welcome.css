@@ -32,7 +32,7 @@
     font-family: 'Merienda', cursive;
 }
 
-.joinMainBtn,.logoutBtn,.joinBackendBtn{
+.joinMainBtn,.logoutBtn,.joinBackendBtn,.shppingBtn{
     cursor: pointer;
     width: 120px;
     height: 30px;
@@ -44,7 +44,14 @@
     transition: all ease-in-out 0.5s;
 }
 
-.joinMainBtn:hover,.logoutBtn:hover,.joinBackendBtn:hover{
+.joinMainBtn:hover,.logoutBtn:hover,.joinBackendBtn:hover,.shppingBtn:hover{
     background-color: #e4e4e4;
 }
 
+.userCenter{
+    background-color: black;
+}
+
+.userCenter a{
+    color: white !important;
+}

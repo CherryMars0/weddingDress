@@ -24,15 +24,14 @@ class Index {
         this.init()
     }
 
-    init(){
+    init() {
         new Slide(banners).init()
         this.binder()
     }
 
-    binder(){
-        this.images.click(function(){
-            console.log(this.src);
-            window.location.href = '/weddingDress/Detail.php';
+    binder() {
+        this.images.click(function () {
+            window.location.href = '/weddingDress/Detail.php?' + this.src.split('/').slice(-1)[0].split('.')[0];
         })
     }
 }

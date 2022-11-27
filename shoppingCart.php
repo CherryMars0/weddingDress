@@ -27,8 +27,9 @@ include './backend/index/shoppingCart.php';
                 <li><a href="./BridalVeil.php">西式婚纱</a></li>
                 <li><a href="./ChidalVeil.php">中式婚纱</a></li>
                 <li><a href="./formal.php">晚礼服</a></li>
-                <li><a href="./login.php">登录</a></li>
-                <li><a href="./register.php">注册</a></li>
+                <li class="login"><a href="./login.php">登录</a></li>
+                <li class="register"><a href="./register.php">注册</a></li>
+                <li class="userCenter"><a href="./welcome.php"><?=$shoppingCart->userName ?></a></li>
             </ul>
         </div>
 
@@ -139,6 +140,8 @@ include './backend/index/shoppingCart.php';
 </body>
 
 <script src="./static/js/axios.min.js"></script>
+<script src="./static/js/userJudge.js"></script>
 <script type="text/javascript" src="./static/js/shoppingCart.js"></script>
+
 
 </html>

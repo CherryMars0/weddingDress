@@ -19,11 +19,19 @@
 }
 
 .shop_pic {
-    width: 50%;
-    height: 720px;
+    width: 40%;
+    height: 620px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+}
+
+.shop_price {
+    height: 50px;
+    margin-top: 50px;
+    font-size: 26px;
+    color: red;
 }
 
 .shop_pic img {
@@ -37,10 +45,12 @@
     width: 50%;
     height: 720px;
 }
-.shop_desc{
+
+.shop_desc {
     padding: 30px;
     text-align: left;
 }
+
 .shop_desc p {
     color: #888A88;
     line-height: 80px;
@@ -52,10 +62,12 @@
     font-size: 34px;
     color: black;
 }
-.shop_count{
+
+.shop_count {
     margin-bottom: 15px;
 }
-.shop_count button{
+
+.shop_count button {
     width: 35px;
     height: 35px;
     font-size: 35px;
@@ -66,7 +78,8 @@
     cursor: pointer;
     background-color: #e4e4e4;
 }
-.shop_count input{
+
+.shop_count input {
     width: 135px;
     height: 35px;
     font-size: 35px;
@@ -76,7 +89,8 @@
     border: none;
     background-color: #e4e4e4;
 }
-.shop_submit button{
+
+.shop_submit button {
     width: 150px;
     height: 40px;
     border: none;
