@@ -41,6 +41,6 @@ class PhotoUploader
     }
 }
 
-$rootSrc = $_POST['src'];;
+$rootSrc = dirname(dirname(dirname(__file__)))."\\static\\shopImg\\";
 $baseData = $_POST['image'];
 new PhotoUploader($baseData, $rootSrc);
