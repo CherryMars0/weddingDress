@@ -11,15 +11,16 @@ class Welcome {
     }
     init() {
         this.binder()
-        let role = this.nameDom[1].innerHTML.split(":")[1]
+        let role = this.nameDom[1].innerHTML.split(":")[0]
+        console.log(role);
         if (role.length != 0) {
             this.loginDom.css("display", "none")
             this.registerDom.css("display", "none")
             this.userCenterDom.css("display", "block")
-            if (role == " Buyers") {
+            if (role == "Buyers") {
                 this.backendBtnDom.css("display", "none")
             }
-            if (role == " Sellers" || role == " WarehouseAdministartor") {
+            if (role == "Sellers" || role == "WarehouseAdministartor") {
                 this.shpooingBtnDom.css("display", "none")
             }
         } else {

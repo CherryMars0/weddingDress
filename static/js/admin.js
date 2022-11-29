@@ -24,21 +24,24 @@ class Admin {
             window.location.reload()
         })
         this.Items[0].addEventListener('click', () => {
-            this.context.load("../../weddingDress/backend/admin/child_BridalVeil.php")
+            this.context.load("../../weddingDress/backend/admin/child_Index.php")
         })
         this.Items[1].addEventListener('click', () => {
-            this.context.load("../../weddingDress/backend/admin/child_ChidalVeil.php")
+            this.context.load("../../weddingDress/backend/admin/child_BridalVeil.php")
         })
         this.Items[2].addEventListener('click', () => {
-            this.context.load("../../weddingDress/backend/admin/child_Formal.php")
+            this.context.load("../../weddingDress/backend/admin/child_ChidalVeil.php")
         })
         this.Items[3].addEventListener('click', () => {
-            this.context.load("../../weddingDress/backend/admin/child_Seller.php")
+            this.context.load("../../weddingDress/backend/admin/child_Formal.php")
         })
         this.Items[4].addEventListener('click', () => {
-            this.context.load("../../weddingDress/backend/admin/child_Buyers.php")
+            this.context.load("../../weddingDress/backend/admin/child_Seller.php")
         })
         this.Items[5].addEventListener('click', () => {
+            this.context.load("../../weddingDress/backend/admin/child_Buyers.php")
+        })
+        this.Items[6].addEventListener('click', () => {
             this.context.load("../../weddingDress/backend/admin/child_WarehouseAdministartor.php")
         })
     }

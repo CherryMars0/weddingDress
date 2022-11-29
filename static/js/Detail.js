@@ -8,6 +8,7 @@ class Details {
         this.subtractDom = $('.subtract')
         this.countDom = $('.count')
         this.userCenterDom = $(".userCenter")
+        this.IdDom = $(".shopID")
         this.init()
     }
     init() {
@@ -15,25 +16,21 @@ class Details {
         this.countDom.val(Number(1))
     }
     binder() {
-        
+
         this.shppingCartDom.click(() => {
-            if(!this.userCenterDom.is('.logined')){
+            if (!this.userCenterDom.is('.logined')) {
                 window.location.href = "/weddingDress/login.php"
                 alert("您未登录,请先登录！")
-            }else{
-                let shopName = this.Index[0].src.split('/').slice(-1)[0].split('.')[0]
-                let userName = this.subtractDom.text()
+            } else {
+                let shopName = $('.center').text()
                 let count = this.countDom.val()
+                let ID = this.IdDom.text()
                 let params = new URLSearchParams()
-                params.append('userName', userName)
+                params.append('ID', ID)
                 params.append('count', count)
                 params.append('shopName', shopName)
-                axios('/weddingDress/backend/Detail/addCart.php', params).then(res => {
-                    if (res.data) {
-                        alert("添加成功，请到购物车查看商品！");
-                    } else {
-                        alert("添加失败，请联系卖家！");
-                    }
+                axios.post('/weddingDress/backend/cart/addShop.php', params).then(res => {
+                    alert(res.data)
                 })
             }
         })

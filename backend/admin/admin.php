@@ -1,6 +1,4 @@
 <?php
-$rootSrc = "E:\\program\\php\\study\\project\\weddingDress\\static\\shopImg";
-
 class Admin
 {
     public $Permissions;

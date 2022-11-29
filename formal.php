@@ -11,6 +11,7 @@ include './backend/index/formal.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeding Ress Store</title>
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/animate.min.css">
     <link rel="stylesheet" href="./static/css/formal.css">
     <link rel="stylesheet" href="./static/css/default.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -20,7 +21,7 @@ include './backend/index/formal.php';
     <div class="container">
         <div class="header-container-bottom">
             <span class="header-logo">
-                <img src="./static/shopImg/logo_03.png">
+                <img class="fadeInDown animated" src="./static/shopImg/logo_03.png">
             </span>
             <ul>
                 <li><a href="./index.php">首页</a></li>
@@ -36,7 +37,7 @@ include './backend/index/formal.php';
         <div class="main">
             <div class="main_banner">
                 <img src="./static/shopImg/14712448458045ppexn.jpg">
-                <div class="main_banner_words">
+                <div class="main_banner_words fadeInUp animated">
                     <p>器物有魂魄 匠人自谦恭</p>
                     <span>
                         SUNVARY&nbsp;在婚纱高档晚礼服定制行业具有较高的声誉和地位,
@@ -47,32 +48,32 @@ include './backend/index/formal.php';
                     </span>
                 </div>
             </div>
-            <div class="main_banner_title">
+            <div class="main_banner_title  fadeInUp animated">
                 <span>FORMAL DRESS</span>
                 <span>晚礼服</span>
                 <img src="./static/shopImg/q7_03.png">
             </div>
             <div class="shop_banner">
                 <div class="shop_banner_first">
-                    <img src="./static/shopImg/14713356414628bfx0n.jpg">
-                    <img src="./static/shopImg/14797115759216bhlcf.jpg">
+                    <img src="<?= $formal->Goods[0][0] ?>">
+                    <img src="<?= $formal->Goods[1][0] ?>">
                 </div>
                 <div class="shop_banner_second">
-                    <img src="./static/shopImg/14713355093504azopi.jpg">
-                    <img src="./static/shopImg/14797116039519dgkz4.jpg">
+                    <img src="<?= $formal->Goods[2][0] ?>">
+                    <img src="<?= $formal->Goods[3][0] ?>">
                 </div>
                 <div class="shop_banner_third">
-                    <img src="./static/shopImg/14797116719918y1thm.jpg">
-                    <img src="./static/shopImg/14800603735142ah684.jpg">
+                    <img src="<?= $formal->Goods[4][0] ?>">
+                    <img src="<?= $formal->Goods[5][0] ?>">
                 </div>
                 <div class="main_banner_title">
                     <span>Accessories</span>
                 </div>
                 <div class="shop_banner_aquert">
-                    <img src="./static/shopImg/ps3.jpg">
-                    <img src="./static/shopImg/ps4.jpg">
-                    <img src="./static/shopImg/ps5.jpg">
-                    <img src="./static/shopImg/ps6.jpg">
+                    <img src="<?= $formal->Goods[6][0] ?>">
+                    <img src="<?= $formal->Goods[7][0] ?>">
+                    <img src="<?= $formal->Goods[8][0] ?>">
+                    <img src="<?= $formal->Goods[9][0] ?>">
                 </div>
             </div>
 

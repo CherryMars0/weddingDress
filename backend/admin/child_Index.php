@@ -1,6 +1,6 @@
 <?php
 include "./ShopManager/Shop.php";
-$page = "Chidal";
+$page = "Index";
 $Shop = new Shop($page);
 ?>
 <!DOCTYPE html>
@@ -13,6 +13,7 @@ $Shop = new Shop($page);
     <link rel="stylesheet" href="./static/css/admin/shop.css">
     <title>child_Seller</title>
 </head>
+
 <body>
     <div class="SellerInfo animated fadeInDown">
         <div class="SellerTitle">

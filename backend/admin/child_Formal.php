@@ -1,6 +1,6 @@
 <?php
 include "./ShopManager/Shop.php";
-$page = "Bridal";
+$page = "Formal";
 $Shop = new Shop($page);
 ?>
 <!DOCTYPE html>
@@ -15,15 +15,20 @@ $Shop = new Shop($page);
 </head>
 
 <body>
-    <div class="SellerInfo">
+    <div class="SellerInfo animated fadeInDown">
         <div class="SellerTitle">
+            <div>商品编号</div>
             <div>商品名称</div>
             <div>说明</div>
             <div>设计师</div>
             <div>价格</div>
+            <div>操作</div>
         </div>
         <?php foreach ($Shop->Shops as $shop) : ?>
             <div class="SellerSig">
+                <div>
+                    <p class="shopID"><?= $shop[9] ?></p>
+                </div>
                 <div>
                     <input disabled class="noInput" value="<?= $shop[0] ?>"></input>
                 </div>
@@ -39,7 +44,6 @@ $Shop = new Shop($page);
                 <div class="btn">
                     <button class="changePic">更改图片</button>
                     <button class="change">更改信息</button>
-                    <button class="delete">删除</button>
                 </div>
                 <div>
                     <input type="file" name="img" id="uploadImage">
@@ -48,6 +52,7 @@ $Shop = new Shop($page);
         <?php endforeach; ?>
     </div>
 </body>
+
 
 </html>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>

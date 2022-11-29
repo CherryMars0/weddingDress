@@ -44,20 +44,21 @@ include './backend/index/Detail.php';
                 </div>
                 <div class="shop_info">
                     <div class="shop_desc">
-                        <p><?= $detail->Goods[0] ?></p>
+                        <p class="center"><?= $detail->Goods[0] ?></p>
+                        <p>商品编号: <span class="shopID"><?= $detail->Goods[9] ?></span></p>
                         <p>关键字: <span><?= $detail->Goods[1] ?></span></p>
-                        <p>面料: <span><?= $detail->Goods[2] ?></span></p>
+                        <p>做工: <span><?= $detail->Goods[2] ?></span></p>
                         <p>风格: <span><?= $detail->Goods[3] ?></span></p>
-                        <p>款型: <span><?= $detail->Goods[4] ?></span></p>
+                        <p>类型: <span><?= $detail->Goods[4] ?></span></p>
                         <p>设计师: <span><?= $detail->Goods[5] ?></span></p>
                         <p>说明: <span><?= $detail->Goods[6] ?></span></p>
                     </div>
-                    <div class="shop_count ">
+                    <div class="shop_count">
                         <button class="subtract">-</button>
                         <input type="text" readonly class="count">
                         <button class="add">+</button>
                     </div>
-                    <div class="shop_submit ">
+                    <div class="shop_submit">
                         <button>加入购物车</button>
                     </div>
                 </div>

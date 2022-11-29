@@ -10,6 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeding Ress Store</title>
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/animate.min.css">
     <link rel="stylesheet" href="./static/css/login.css">
     <link rel="stylesheet" href="./static/css/default.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -20,8 +21,8 @@ session_start();
         <div class="main">
             <div class="main_left">
                 <div class="loginContainer">
-                    <p class="loginTitle">Login</p>
-                    <div class="login">
+                    <p class="loginTitle fadeInLeft animated">Login</p>
+                    <div class="login fadeInLeft animated">
                         <form class="loginForm" id="loginForm" action="/user/login" method="post">
                             <div class="inputBox">
                                 <p>
@@ -55,7 +56,7 @@ session_start();
                             </div>
                             <p class="errorTab"></p>
                         </form>
-                        <button class="loginBtn" id="login">Login</button>
+                        <button class="loginBtn fadeInLeft animated" id="login">登录</button>
                         <div class="loginContainer-bottom">
                             <ul>
                                 <li><a href="./index.php">首页</a></li>
@@ -71,7 +72,7 @@ session_start();
             </div>
             <div class="banner">
                 <img src="./static/ShopImg/n3.jpg">
-                <div class="banner_words">
+                <div class="banner_words fadeInUp animated">
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;—Brand Story</p>
                     <br>
                     <span>品牌创立以来，设计团队始终秉持着传承领先的设计理念，致力于为用户</span>

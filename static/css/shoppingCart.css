@@ -25,12 +25,29 @@
 }
 
 .shppingCart_detail_top_left {
-    width: 300px;
     text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.shppingCart_detail_top_left p:nth-child(1) {
+    width: 150px;
+}
+
+.shppingCart_detail_top_left p:nth-child(2) {
+    width: 90px;
+}
+
+.shppingCart_detail_top_left p:nth-child(3) {
+    width: 100px;
+}
+
+.shppingCart_detail_top_left p:nth-child(4) {
+    width: 350px;
 }
 
 .shppingCart_detail_top {
-    font-size: 12px;
+    font-size: 14px;
     height: 50px;
     width: 100%;
     display: flex;
@@ -51,9 +68,19 @@
 }
 
 .shppingCart_detail_shop {
-    background-color: #FFF4E8;
+    width: 100%;
+}
+
+.signal {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #FFF4E8;
+    border-bottom: 1px solid black;
+}
+
+.shopID {
+    width: 150px;
 }
 
 .shppingCart_detail_shop_left {
@@ -63,6 +90,22 @@
     align-items: center;
     padding: 10px;
     justify-content: space-around;
+}
+
+.shppingCart_detail_shop_left div img {
+    width: 90px;
+}
+
+.shppingCart_detail_shop_left div:nth-child(2) span {
+    display: block;
+    text-align: center;
+    width: 100px;
+}
+
+.shppingCart_detail_shop_left div:nth-child(3) span {
+    display: block;
+    text-align: center;
+    width: 300px;
 }
 
 .shppingCart_detail_shop_right {
@@ -75,7 +118,6 @@
 }
 
 .shppingCart_detail_total {
-    font-size: 12px;
     height: 50px;
     width: 100%;
     display: flex;
@@ -93,21 +135,26 @@
 }
 
 .shppingCart_detail_total_right {
-    width: 400px;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    line-height: 100%;
 }
 
-.shppingCart_detail_shop_left div span {
-    display: block;
-    width: 200px;
+.totalPrice {
+    color: red;
+    font-weight: bold;
 }
+
 
 .shop_count input {
     width: 20px;
     height: 20px;
     border: none;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
 }
 
 .shop_count button {
@@ -118,15 +165,24 @@
 }
 
 .shppingCart_detail_shop_right {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .shppingCart_detail_shop_right span {
     color: red;
+    font-size: 16px;
 }
 
 .shop_oprating p {
     cursor: pointer;
+    display: block;
+    background-color: red;
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
 }
 
 .shppingCart_detail_total_right button {
@@ -150,4 +206,20 @@
 .shppingCart_detail_total_left button {
     border: none;
     cursor: pointer;
+}
+
+.shopID {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container-bottom ul li:nth-child(7) {
+    background-color: black;
+}
+
+.header-container-bottom ul li:nth-child(7) a {
+    color: white;
 }

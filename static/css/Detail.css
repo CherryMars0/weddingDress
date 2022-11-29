@@ -8,14 +8,13 @@
 .shop_Detail {
     width: 1400px;
     margin: 10px auto;
-    height: 720px;
+    height: 800px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #F5F5F5;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px #e4e4e4;
-
+    box-shadow: 10px 10px 5px #e4e4e4;
 }
 
 .shop_pic {
@@ -43,19 +42,29 @@
 
 .shop_info {
     width: 50%;
-    height: 720px;
+    height: 750px;
 }
 
 .shop_desc {
-    padding: 30px;
     text-align: left;
 }
 
+.center {
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+
 .shop_desc p {
-    color: #888A88;
+    color: black;
     line-height: 80px;
     font-weight: bold;
     font-size: 24px;
+    font-family: 'Merienda', cursive;
+    text-shadow: 0 0 1px #b8b8af;
+}
+
+.shop_desc p span {
+    font-family: 'Merienda', cursive;
 }
 
 .shop_desc p:nth-child(1) {
@@ -65,34 +74,40 @@
 
 .shop_count {
     margin-bottom: 15px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .shop_count button {
     width: 35px;
     height: 35px;
     font-size: 35px;
-    line-height: 35px;
-    text-align: center;
+    line-height: 15px;
     border-radius: 5px;
+    padding: 0 !important;
     border: none;
     cursor: pointer;
     background-color: #e4e4e4;
+    margin: 0 10px;
 }
 
 .shop_count input {
     width: 135px;
     height: 35px;
-    font-size: 35px;
+    font-size: 24px;
     line-height: 35px;
     text-align: center;
     border-radius: 5px;
+    font-weight: bold;
     border: none;
     background-color: #e4e4e4;
 }
 
 .shop_submit button {
     width: 150px;
-    height: 40px;
+    height: 35px;
     border: none;
     font-size: 22px;
     color: black;
@@ -101,4 +116,8 @@
     cursor: pointer;
     font-weight: bold;
     transition: all ease-in-out 0.2s;
+}
+
+.shop_submit button:hover {
+    background-color: #E2B394;
 }

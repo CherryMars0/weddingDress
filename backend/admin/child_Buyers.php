@@ -15,7 +15,7 @@ $Seller = new User($role);
 </head>
 
 <body>
-    <div class="SellerInfo">
+    <div class="SellerInfo animated fadeInDown">
         <div class="SellerTitle">
             <div>ID</div>
             <div>Name</div>
@@ -26,7 +26,7 @@ $Seller = new User($role);
         <?php foreach ($Seller->Users as $User) : ?>
             <div class="SellerSig">
                 <div>
-                    <input disabled class="noInput" value="<?= $User[0] ?>"></input>
+                    <p class="userID"><?= $User[0] ?></p>
                 </div>
                 <div>
                     <input disabled class="noInput" value="<?= $User[1] ?>"></input>

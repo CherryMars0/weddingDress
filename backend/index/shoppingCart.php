@@ -1,4 +1,5 @@
 <?php
+include "./backend/utils/sqlUtils.php";
 class ShppingCart
 {
     public $userName;
@@ -21,13 +22,18 @@ class ShppingCart
 
     private function GetInfo()
     {
-        
+        $this->queryGoods();
     }
 
     private function queryGoods()
     {
-        $User_SQL_Str = "select * from shop where pic='" . $this->imgSrc . "'";
-        $this->Goods = sql_conn_query($this->DataBase, $User_SQL_Str);
+        $User_SQL_Str = "select * from shopping_info where userName='" . $_SESSION['userName'] . "';";
+        if (empty(sql_conn_query($this->DataBase, $User_SQL_Str))) {
+            $this->Goods = "null";
+        } else {
+            $this->Goods = sql_conn_query($this->DataBase, $User_SQL_Str);
+            
+        }
     }
 }
 

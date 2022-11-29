@@ -38,7 +38,9 @@
 .shop_banner img:hover {
     transform: scale(1);
 }
-
+.header-container-bottom ul li{
+    transition: all 0.1s;
+}
 .header-container-bottom ul li:nth-child(1) {
     background-color: black;
 }

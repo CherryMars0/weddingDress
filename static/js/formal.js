@@ -1,14 +1,14 @@
-class Formal{
-    constructor(){
+class Formal {
+    constructor() {
         this.Index = $(".shop_banner").find("img");
         this.init()
     }
-    init(){
+    init() {
         this.binder()
     }
-    binder(){
-        this.Index.click(()=>{
-            window.location.href = "/weddingDress/shoppingCart.php"
+    binder() {
+        this.Index.click(function () {
+            window.location.href = '/weddingDress/Detail.php?' + this.src.split('/').slice(-1)[0].split('.')[0];
         })
     }
 }

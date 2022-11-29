@@ -11,6 +11,7 @@ include './backend/index/index.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeding Ress Store</title>
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/animate.min.css">
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="stylesheet" href="./static/css/default.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -21,7 +22,7 @@ include './backend/index/index.php';
         <div class="header">
             <div class="header-container-bottom">
                 <span class="header-logo">
-                    <img src="./static/shopImg/logo_03.png">
+                    <img class="fadeInDown animated" src="./static/shopImg/logo_03.png">
                 </span>
                 <ul>
                     <li><a href="./index.php">首页</a></li>
@@ -30,11 +31,11 @@ include './backend/index/index.php';
                     <li><a href="./formal.php">晚礼服</a></li>
                     <li class="login"><a href="./login.php">登录</a></li>
                     <li class="register"><a href="./register.php">注册</a></li>
-                    <li class="userCenter"><a href="./welcome.php"><?=$index->userName?></a></li>
+                    <li class="userCenter"><a href="./welcome.php"><?= $index->userName ?></a></li>
                 </ul>
             </div>
         </div>
-        <div class="main">
+        <div class="main fadeInUp animated">
             <div class="banner-slide">
                 <div class="slide-box">
                     <div class="banner-box"></div>
@@ -45,13 +46,13 @@ include './backend/index/index.php';
             </div>
             <div class="shop_banner">
                 <div class="shop_banner_left">
-                    <img src="<?= $index->Goods[7] ?>">
+                    <img src="<?= $index->Goods[0][0] ?>">
                 </div>
                 <div class="shop_banner_right">
-                    <img src="./static/shopImg/luomaB.png">
-                    <img src="./static/shopImg/luomaC.png">
-                    <img src="./static/shopImg/pic3-2.png">
-                    <img src="./static/shopImg/pic3-3.png">
+                    <img src="<?= $index->Goods[3][0] ?>">
+                    <img src="<?= $index->Goods[2][0] ?>">
+                    <img src="<?= $index->Goods[1][0] ?>">
+                    <img src="<?= $index->Goods[4][0] ?>">
                 </div>
             </div>
         </div>

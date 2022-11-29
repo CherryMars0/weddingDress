@@ -11,7 +11,7 @@ class Index
         $this->init();
         if (empty($_SESSION['userName'])) {
             $this->userName = 404;
-        }else{
+        } else {
             $this->userName = $_SESSION['userName'];
         }
     }
@@ -23,8 +23,8 @@ class Index
 
     private function getGoods()
     {
-        $Goods_SQL_Str = "select * from shop ;";
-        $this->Goods = sql_conn_query($this->DataBase, $Goods_SQL_Str)[0];
+        $Goods_SQL_Str = "select pic from shop where page='index';";
+        $this->Goods = sql_conn_query($this->DataBase, $Goods_SQL_Str);
     }
 }
 

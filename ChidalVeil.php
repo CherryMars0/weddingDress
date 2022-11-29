@@ -11,6 +11,7 @@ include './backend/index/ChidalVeil.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeding Ress Store</title>
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/animate.min.css">
     <link rel="stylesheet" href="./static/css/ChidalVeil.css">
     <link rel="stylesheet" href="./static/css/default.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -21,7 +22,7 @@ include './backend/index/ChidalVeil.php';
         <div class="header">
             <div class="header-container-bottom">
                 <span class="header-logo">
-                    <img src="./static/shopImg/logo_03.png">
+                    <img class="fadeInDown animated" src="./static/shopImg/logo_03.png">
                 </span>
                 <ul>
                     <li><a href="./index.php">首页</a></li>
@@ -39,7 +40,7 @@ include './backend/index/ChidalVeil.php';
                 <img src="./static/shopImg/girl-gd5049a57c_1920.jpg">
                 <div class="main_blur">
                 </div>
-                <div class="main_banner_words">
+                <div class="main_banner_words fadeInUp animated">
                     <p>专注于中式婚纱私人定制</p>
                     <span>
                         SUNVARY&nbsp;珍视传统，但同时更放眼未来。
@@ -51,42 +52,42 @@ include './backend/index/ChidalVeil.php';
                     </span>
                 </div>
             </div>
-            <div class="main_banner_title">
+            <div class="main_banner_title fadeInUp animated">
                 <span>Chidal Veil</span>
                 <span>中式婚纱</span>
                 <img src="./static/shopImg/q7_03.png">
             </div>
             <div class="shop_banner">
                 <div class="shop_banner_top">
-                    <img src="./static/shopImg/ChidalVeil/21.jpg">
-                    <img src="./static/shopImg/ChidalVeil/22.jpg">
-                    <img src="./static/shopImg/ChidalVeil/23.png">
-                    <img src="./static/shopImg/ChidalVeil/24.png">
+                    <img src="<?= $childalVeil->Goods[0][0] ?>">
+                    <img src="<?= $childalVeil->Goods[1][0] ?>">
+                    <img src="<?= $childalVeil->Goods[2][0] ?>">
+                    <img src="<?= $childalVeil->Goods[3][0] ?>">
                 </div>
                 <div class="shop_banner_Bottom">
                     <div class="main_banner_title">
                         <span>Classic</span>
                     </div>
                     <div class="shop_banner_Bottom_top">
-                        <img src="./static/shopImg/ChidalVeil/xq2_1_1.jpg">
-                        <img src="./static/shopImg/ChidalVeil/xq2_four_4.png">
-                        <img src="./static/shopImg/ChidalVeil/xq2_four_2.png">
+                        <img src="<?= $childalVeil->Goods[4][0] ?>">
+                        <img src="<?= $childalVeil->Goods[5][0] ?>">
+                        <img src="<?= $childalVeil->Goods[6][0] ?>">
                     </div>
                     <div class="shop_banner_Bottom_bottom">
-                        <img src="./static/shopImg/ChidalVeil/xq_10.png">
-                        <img src="./static/shopImg/ChidalVeil/54.png">
-                        <img src="./static/shopImg/ChidalVeil/51.png">
-                        <img src="./static/shopImg/ChidalVeil/zs_11.png">
+                        <img src="<?= $childalVeil->Goods[7][0] ?>">
+                        <img src="<?= $childalVeil->Goods[8][0] ?>">
+                        <img src="<?= $childalVeil->Goods[9][0] ?>">
+                        <img src="<?= $childalVeil->Goods[10][0] ?>">
                     </div>
                 </div>
                 <div class="main_banner_title">
                     <span>Accessories</span>
                 </div>
                 <div class="shop_banner_aquert">
-                    <img src="./static/shopImg/ChidalVeil/51.png">
-                    <img src="./static/shopImg/ChidalVeil/zs_14.png">
-                    <img src="./static/shopImg/ChidalVeil/43.jpg">
-                    <img src="./static/shopImg/ChidalVeil/53.png">
+                    <img src="<?= $childalVeil->Goods[11][0] ?>">
+                    <img src="<?= $childalVeil->Goods[12][0] ?>">
+                    <img src="<?= $childalVeil->Goods[13][0] ?>">
+                    <img src="<?= $childalVeil->Goods[14][0] ?>">
                 </div>
             </div>
         </div>

@@ -30,76 +30,79 @@ include './backend/admin/admin.php';
                         </li>
                     </ul>
                 </div>
-
                 <div class="layui-side layui-bg-black fadeInLeft animated">
                     <div class="layui-side-scroll ">
                         <ul class="layui-nav layui-nav-tree" lay-filter="test">
                             <li class="layui-nav-item layui-nav-itemed">
-                                <a href="javascript:;">Product Datas</a>
+                                <a href="javascript:;">商品数据管理</a>
                                 <dl class="layui-nav-child">
-                                    <dd><a href="javascript:;" class="item" class="choice">Bridal Veil</a></dd>
-                                    <dd><a href="javascript:;" class="item">Chidal Veil</a></dd>
-                                    <dd><a href="javascript:;" class="item">formal </a></dd>
+                                    <dd><a href="javascript:;" class="item animated fadeInDown" class="choice">首页</a></dd>
+                                    <dd><a href="javascript:;" class="item animated fadeInDown">欧式婚纱</a></dd>
+                                    <dd><a href="javascript:;" class="item animated fadeInDown">中式婚纱</a></dd>
+                                    <dd><a href="javascript:;" class="item animated fadeInDown">晚礼服</a></dd>
                                 </dl>
                             </li>
                             <li class="layui-nav-item Management">
-                                <a href="javascript:;">User Management</a>
+                                <a href="javascript:;">用户管理</a>
                                 <dl class="layui-nav-child">
-                                    <dd><a href="javascript:;" class="item">Seller</a></dd>
-                                    <dd><a href="javascript:;" class="item">Buyers</a></dd>
-                                    <dd><a href="javascript:;" class="item">Warehouse Administartor</a></dd>
+                                    <dd><a href="javascript:;" class="item animated fadeInDown">卖家</a></dd>
+                                    <dd><a href="javascript:;" class="item animated fadeInDown">买家</a></dd>
+                                    <dd><a href="javascript:;" class="item animated fadeInDown">仓库管理员</a></dd>
                                 </dl>
                             </li>
                             <li class="layui-nav-item">
-                                <a href="javascript:;">System</a>
+                                <a href="javascript:;">系统</a>
                                 <dl class="layui-nav-child">
-                                    <dd><a href="/weddingDress/index.php" class="item">back Index page</a></dd>
-                                    <dd><a href="javascript:;" class="item logout">Logout</a></dd>
+                                    <dd><a href="/weddingDress/index.php" class="item animated fadeInDown">返回首页</a></dd>
+                                    <dd><a href="javascript:;" class="item logout animated fadeInDown">登出</a></dd>
                                 </dl>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="layui-body">
-                    <div class="sales">
-                        <div>
-                            <div class="sales-top">
-                                <img src="./static/shopImg/icon/yen.png">
-                                <p>销售额</p>
+                    <div class="idnex">
+                        <div class="sales fadeInDown animated">
+                            <div>
+                                <div class="sales-top">
+                                    <img src="./static/shopImg/icon/yen.png">
+                                    <p>销售额</p>
+                                </div>
+                                <div class="sales-bottom">
+                                    <p>今日: ￥<span>17010</span></p>
+                                    <p>昨日: ￥<span>282960</span></p>
+                                </div>
                             </div>
-                            <div class="sales-bottom">
-                                <p>今日: ￥<span>17010</span></p>
-                                <p>昨日: ￥<span>282960</span></p>
-                            </div>
+                            <button>每日销售额</button>
                         </div>
-                        <button>每日销售额</button>
-                    </div>
-                    <div class="orders">
-                        <div>
-                            <div class="orders-top">
-                                <img src="./static/shopImg/icon/text.png">
-                                <p>订单数</p>
+                        <div class="orders fadeInUp animated">
+                            <div>
+                                <div class="orders-top">
+                                    <img src="./static/shopImg/icon/text.png">
+                                    <p>订单数</p>
+                                </div>
+                                <div class="orders-bottom">
+                                    <p>今日: <span>6</span></p>
+                                    <p>昨日: <span>110</span></p>
+                                </div>
                             </div>
-                            <div class="orders-bottom">
-                                <p>今日: <span>6</span></p>
-                                <p>昨日: <span>110</span></p>
-                            </div>
+                            <button>每日订单数</button>
                         </div>
-                        <button>每日订单数</button>
-                    </div>
-                    <div class="visitors">
-                        <div>
-                            <div class="visitors-top">
-                                <img src="./static/shopImg/icon/user.png">
-                                <p>访客数</p>
+                        <div class="visitors fadeInDown animated">
+                            <div>
+                                <div class="visitors-top">
+                                    <img src="./static/shopImg/icon/user.png">
+                                    <p>访客数</p>
+                                </div>
+                                <div class="visitors-bottom">
+                                    <p>今日: <span>959</span></p>
+                                    <p>昨日: <span>14193</span></p>
+                                </div>
                             </div>
-                            <div class="visitors-bottom">
-                                <p>今日: <span>959</span></p>
-                                <p>昨日: <span>14193</span></p>
-                            </div>
+                            <button>每日访客数</button>
                         </div>
-                        <button>每日访客数</button>
                     </div>
+
                 </div>
                 <div class="layui-footer fadeInUp animated">
                     <span class="role"><?= $admin->Permissions ?></span>

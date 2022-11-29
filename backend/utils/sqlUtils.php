@@ -17,7 +17,11 @@ function sql_conn_query($dbName, $sql)
     $res = sql_conn($dbName)->query($sql);
     $data = $res->fetch_all();
     sql_conn($dbName)->close();
-    return $data;
+    if (empty($data)) {
+        return null;
+    } else {
+        return $data;
+    }
 };
 
 function sql_conn_insert($dbName, $sql)

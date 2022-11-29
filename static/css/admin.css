@@ -67,6 +67,17 @@ body,
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-image: url("/weddingDress/static/shopImg/icon/student-time-management.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50%;
+}
+
+.idnex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .sales,
@@ -153,6 +164,17 @@ body,
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.layui-side,
+.layui-footer,
+.layui-header {
+    z-index: 9999 !important;
+}
+
+.layui-body {
+    z-index: 1 !important;
 }
 
 .layui-footer span {
@@ -163,3 +185,4 @@ body,
 .title p {
     cursor: pointer;
 }
+

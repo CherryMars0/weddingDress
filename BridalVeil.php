@@ -11,6 +11,7 @@ include './backend/index/BridalVeil.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeding Ress Store</title>
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/animate.min.css">
     <link rel="stylesheet" href="./static/css/BridalVeil.css">
     <link rel="stylesheet" href="./static/css/default.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -20,7 +21,7 @@ include './backend/index/BridalVeil.php';
     <div class="container">
         <div class="header-container-bottom">
             <span class="header-logo">
-                <img src="./static/shopImg/logo_03.png">
+                <img class="fadeInDown animated" src="./static/shopImg/logo_03.png">
             </span>
             <ul>
                 <li><a href="./index.php">首页</a></li>
@@ -29,7 +30,7 @@ include './backend/index/BridalVeil.php';
                 <li><a href="./formal.php">晚礼服</a></li>
                 <li class="login"><a href="./login.php">登录</a></li>
                 <li class="register"><a href="./register.php">注册</a></li>
-                <li class="userCenter"><a href="./welcome.php"><?=$bridalVeil->userName ?></a></li>
+                <li class="userCenter"><a href="./welcome.php"><?= $bridalVeil->userName ?></a></li>
             </ul>
         </div>
         <div class="main">
@@ -46,35 +47,35 @@ include './backend/index/BridalVeil.php';
             </div>
             <div class="shop_banner">
                 <div class="shop_banner_aquert">
-                    <img src="./static/shopImg/hs_7.png">
-                    <img src="./static/shopImg/hs_8.png">
-                    <img src="./static/shopImg/hs_9.png">
-                    <img src="./static/shopImg/hs_10.png">
+                    <img src="<?= $bridalVeil->Goods[0][0] ?>">
+                    <img src="<?= $bridalVeil->Goods[1][0] ?>">
+                    <img src="<?= $bridalVeil->Goods[2][0] ?>">
+                    <img src="<?= $bridalVeil->Goods[3][0] ?>">
                 </div>
                 <div class="main_banner_title">
                     <span>Classic</span>
                 </div>
                 <div class="shop_banner_Popular">
                     <div class="shop_banner_Popular_left">
-                        <img src="./static/shopImg/hs_11.png">
-                        <img src="./static/shopImg/hs_12.png">
+                        <img src="<?= $bridalVeil->Goods[4][0] ?>">
+                        <img src="<?= $bridalVeil->Goods[5][0] ?>">
                     </div>
                     <div class="shop_banner_Popular_middle">
-                        <img src="./static/shopImg/hs_13.png">
+                        <img src="<?= $bridalVeil->Goods[6][0] ?>">
                     </div>
                     <div class="shop_banner_Popular_right">
-                        <img src="./static/shopImg/hs_14.png">
-                        <img src="./static/shopImg/hs_16.png">
+                        <img src="<?= $bridalVeil->Goods[7][0] ?>">
+                        <img src="<?= $bridalVeil->Goods[8][0] ?>">
                     </div>
                 </div>
                 <div class="main_banner_title">
                     <span>Accessories</span>
                 </div>
                 <div class="shop_banner_aquert">
-                    <img src="./static/shopImg/ps12.jpg">
-                    <img src="./static/shopImg/ps11.jpg">
-                    <img src="./static/shopImg/ps10.jpg">
-                    <img src="./static/shopImg/ps9.jpg">
+                    <img src="<?= $bridalVeil->Goods[9][0] ?>">
+                    <img src="<?= $bridalVeil->Goods[10][0] ?>">
+                    <img src="<?= $bridalVeil->Goods[11][0] ?>">
+                    <img src="<?= $bridalVeil->Goods[12][0] ?>">
                 </div>
             </div>
         </div>

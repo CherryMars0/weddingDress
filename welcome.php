@@ -10,6 +10,7 @@ include './backend/index/welcome.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeding Ress Store</title>
+    <link rel="stylesheet" href="./static/css/animate.min.css">
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./static/css/default.css">
     <link rel="stylesheet" href="./static/css/welcome.css">
@@ -20,7 +21,7 @@ include './backend/index/welcome.php';
     <div class="container">
         <div class="header-container-bottom">
             <span class="header-logo">
-                <img src="./static/shopImg/logo_03.png">
+                <img class="fadeInDown animated" src="./static/shopImg/logo_03.png">
             </span>
             <ul>
                 <li><a href="./index.php">首页</a></li>
@@ -29,23 +30,24 @@ include './backend/index/welcome.php';
                 <li><a href="./formal.php">晚礼服</a></li>
                 <li class="login"><a href="./login.php">登录</a></li>
                 <li class="register"><a href="./register.php">注册</a></li>
-                <li class="userCenter"><a href="./welcome.php"><?=$_SESSION['userName']?></a></li>
+                <li class="userCenter"><a href="./welcome.php"><?= $_SESSION['userName'] ?></a></li>
             </ul>
         </div>
 
         <div class="main">
-            <div class="left">
-                <div class="info">
+            <div class="banner">
+                <img class="banner_img fadeInUp animated" src="./static/shopImg/icon/hello-october.gif">
+                <div class="info fadeInUp animated">
                     <div class="main_banner_title">
-                        <span>welcome</span>
-                        <span><?= $userName . " : " . $Permissions ?></span>
+                        <span>欢迎回来!</span>
+                        <span><?= $Permissions . ":" . $userName ?></span>
                         <img src="./static/shopImg/q7_03.png">
                     </div>
                 </div>
                 <div class="btn">
-                    <button class="joinBackendBtn">进入后台</button>
-                    <button class="shppingBtn">购物车</button>
-                    <button class="logoutBtn">登出</button>
+                    <button class="joinBackendBtn fadeInLeft animated">进入后台</button>
+                    <button class="shppingBtn fadeInLeft animated">购物车</button>
+                    <button class="logoutBtn fadeInRight animated">登出</button>
                 </div>
             </div>
         </div>
