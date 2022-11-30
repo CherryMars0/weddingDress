@@ -194,6 +194,7 @@
     line-height: 30px;
     letter-spacing: 5px;
     cursor: pointer;
+    User-select:none;
 }
 
 .inputCaptcha {

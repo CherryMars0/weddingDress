@@ -63,14 +63,13 @@ body,
     left: 200px;
     width: calc(100% - 200px);
     height: calc(100% - 104px);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     background-image: url("/weddingDress/static/shopImg/icon/student-time-management.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .idnex {
@@ -185,4 +184,3 @@ body,
 .title p {
     cursor: pointer;
 }
-

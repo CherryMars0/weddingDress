@@ -11,6 +11,7 @@ include './backend/index/shoppingCart.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeding Ress Store</title>
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/animate.min.css">
     <link rel="stylesheet" href="./static/css/default.css">
     <link rel="stylesheet" href="./static/css/shoppingCart.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -57,7 +58,7 @@ include './backend/index/shoppingCart.php';
                     </div>
                     <div class="shppingCart_detail_shop">
                         <?php if (is_array($shoppingCart->Goods)) foreach ($shoppingCart->Goods as $Good) :  ?>
-                            <div class="signal">
+                            <div class="signal animated">
                                 <div class="shopID">
                                     <span><?= $Good[1] ?></span>
                                 </div>

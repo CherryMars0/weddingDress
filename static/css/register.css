@@ -20,8 +20,6 @@
     position: relative;
 }
 
-
-
 .banner_words {
     position: absolute;
     bottom: 120px;
@@ -43,8 +41,6 @@
     text-shadow: 0 0 1px #b8b8af;
     font-family: 'Merienda', cursive;
 }
-
-
 
 .banner img {
     height: 100%;
@@ -198,6 +194,7 @@
     line-height: 30px;
     letter-spacing: 5px;
     cursor: pointer;
+    User-select: none;
 }
 
 .inputCaptcha {

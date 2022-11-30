@@ -25,10 +25,14 @@ class shoppingCart {
             let shopID = $(this.parentNode.parentNode.parentNode).find('.shopID').find('span').text()
             let params = new URLSearchParams();
             params.append("ID", shopID)
-            axios.post("/weddingDress/backend/cart/deleteShop.php", params).then(res => {
-                window.location.reload()
+            axios.post("/weddingDress/backend/cart/deleteShop.php", params).then(() => {
+                $(this.parentNode.parentNode.parentNode).addClass('fadeOutRight')
+                setTimeout(function () {
+                    window.location.reload()
+                }, 1000)
             })
         })
+
         this.countAddDom.click(function () {
             let count = $(this.parentNode).find('input')
             let signTotalPriceDom = $(this.parentNode.parentNode).find('.signTotalPrice')
@@ -36,6 +40,7 @@ class shoppingCart {
             count.val(Number(count.val()) + 1)
             signTotalPriceDom.text(signPriceDom.text() * count.val())
         })
+
         this.subtractAddDom.click(function () {
             let count = $(this.parentNode).find('input')
             let signTotalPriceDom = $(this.parentNode.parentNode).find('.signTotalPrice')
@@ -45,6 +50,7 @@ class shoppingCart {
                 signTotalPriceDom.text(signPriceDom.text() * count.val())
             }
         })
+        
         this.signTotalPriceDom.bind("DOMNodeInserted", () => {
             $('.totalPrice').text(0)
             this.signTotalPriceDom.each(function () {

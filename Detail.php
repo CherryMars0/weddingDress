@@ -11,6 +11,7 @@ include './backend/index/Detail.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weeding Ress Store</title>
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/animate.min.css">
     <link rel="stylesheet" href="./static/css/Detail.css">
     <link rel="stylesheet" href="./static/css/default.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -20,7 +21,7 @@ include './backend/index/Detail.php';
     <div class="container">
         <div class="header-container-bottom">
             <span class="header-logo">
-                <img src="./static/shopImg/logo_03.png">
+                <img class="fadeInDown animated" src="./static/shopImg/logo_03.png">
             </span>
             <ul>
                 <li><a href="./index.php">首页</a></li>
@@ -38,27 +39,27 @@ include './backend/index/Detail.php';
                 <img src="./static/shopImg/q7_03.png">
             </div>
             <div class="shop_Detail">
-                <div class="shop_pic">
+                <div class="shop_pic fadeInLeft animated">
                     <img src="<?= $detail->Goods[7] ?>">
                     <div class="shop_price"><?= $detail->Goods[8] ?>$</div>
                 </div>
                 <div class="shop_info">
                     <div class="shop_desc">
-                        <p class="center"><?= $detail->Goods[0] ?></p>
-                        <p>商品编号: <span class="shopID"><?= $detail->Goods[9] ?></span></p>
-                        <p>关键字: <span><?= $detail->Goods[1] ?></span></p>
-                        <p>做工: <span><?= $detail->Goods[2] ?></span></p>
-                        <p>风格: <span><?= $detail->Goods[3] ?></span></p>
-                        <p>类型: <span><?= $detail->Goods[4] ?></span></p>
-                        <p>设计师: <span><?= $detail->Goods[5] ?></span></p>
-                        <p>说明: <span><?= $detail->Goods[6] ?></span></p>
+                        <p class="center fadeInLeft animated"><?= $detail->Goods[0] ?></p>
+                        <p class="fadeInLeft animated">商品编号: <span class="shopID"><?= $detail->Goods[9] ?></span></p>
+                        <p class="fadeInLeft animated">关键字: <span><?= $detail->Goods[1] ?></span></p>
+                        <p class="fadeInLeft animated">做工: <span><?= $detail->Goods[2] ?></span></p>
+                        <p class="fadeInLeft animated">风格: <span><?= $detail->Goods[3] ?></span></p>
+                        <p class="fadeInLeft animated">类型: <span><?= $detail->Goods[4] ?></span></p>
+                        <p class="fadeInLeft animated">设计师: <span><?= $detail->Goods[5] ?></span></p>
+                        <p class="fadeInLeft animated">说明: <span><?= $detail->Goods[6] ?></span></p>
                     </div>
-                    <div class="shop_count">
+                    <div class="shop_count fadeInLeft animated">
                         <button class="subtract">-</button>
                         <input type="text" readonly class="count">
                         <button class="add">+</button>
                     </div>
-                    <div class="shop_submit">
+                    <div class="shop_submit fadeInLeft animated">
                         <button>加入购物车</button>
                     </div>
                 </div>
